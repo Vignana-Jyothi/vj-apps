@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App1 = () => (
     <iframe
-        src="http://localhost:5001"
+        src="http://project-explorer.vnrzone.site/"
         style={{ width: "100%", height: "80vh", border: "none" }}
     />
 );
@@ -22,13 +22,13 @@ function App() {
                 <h1>Unified Application</h1>
                 <nav>
                     <ul>
-                        <li><a href="/app1">App 1</a></li>
-                        <li><a href="/app2">App 2</a></li>
+                        <li><a href="/app3">App 1</a></li>
+                        <li><a href="/app4">App 2</a></li>
                     </ul>
                 </nav>
                 <Routes>
-                    <Route path="/app1" element={<App1 />} />
-                    <Route path="/app2" element={<App2 />} />
+                    <Route path="/app3" element={<App1 />} />
+                    <Route path="/app4" element={<App2 />} />
                 </Routes>
             </div>
         </Router>
