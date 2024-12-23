@@ -1,0 +1,30 @@
+
+server {
+    listen 80;
+
+    server_name yourdomain.com;
+
+    location /app1/ {
+        proxy_pass http://localhost:5001/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /app2/ {
+        proxy_pass http://localhost:5002/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /app3/ {
+        proxy_pass http://localhost:5003/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /app4/ {
+        proxy_pass http://localhost:5004/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

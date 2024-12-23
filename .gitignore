@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+build/
+
+# Python
+*.pyc
+__pycache__/
+
+# Miscellaneous
+.DS_Store
+.env
+.vscode/
